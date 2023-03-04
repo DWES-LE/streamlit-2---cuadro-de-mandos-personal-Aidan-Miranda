@@ -1,34 +1,60 @@
-# 📈 Cuadro de mandos personal 📊
- 
-> Usa este repositorio para crear un cuadro de mandos personal con Streamlit. Documenta los siguientes apartados del README.
-> Incluye en tu README la url de donde has publicado tu aplicación. Pon la `url` también en el `About` de tu repositorio.
-
-## Objetivo
-Diseño de un cuadro de mandos personal para visualización e interacción con un conjunto de datos.
-
-## Los datos
-Elige un conjunto de datos que te interese: educación, deportes, trabajo, música, econocomía, etc. 
-
-## Búsqueda de los datos
-Busca una fuente para tus datos. Puedes usar una API de un portal de datos abiertos, un conjunto ya publicado, recopilar personalmente datos por scraping, etc.
+# Análisis de datos de videojuegos
 
 ## Documentación de los datos
-Documenta los datos que vas a usar y su origen. De dónde los has sacado, fuentes, etc. Describe los campos, los valores, las unidades, etc.
+Este dataset contiene una lista de videojuegos con ventas mayores a las 100.000 copias. Y fue obtenido en la página kaggle.com.
 
-## Prepara tu aplicación.
-La aplicación se llamará `app.py`. Añade un `requirements.txt` con las dependencias de tu aplicación. Ve actualizándolo a medida que vayas añadiendo librerías.
+El dataset incluye:
 
-## Carga y análisis de conjunto de dato con pandas
-Carga el conjunto de datos en un dataframe de pandas y realiza un análisis exploratorio de los datos.
+Rank - Ranking de ventas a nivel mundias
 
-## Visualización de los datos
-Prepara visualizaciones diferentes del dataframe en texto (tablas) o gráficas (histogramas, barras, etc.). Puedes usar matplotlib, seaborn, plotly, etc.
+Name - El nombre del juego
 
-## Diseña la interacción que van a tener tus datos
-Qué inputs y outputs tendrán tus datos. 
+Platform - Plataforma en la que el juego se publicó (DS,PC,PS4, etc.)
 
-## Prepara la aplicación (cuadro de mandos) con Streamlit
-Prepara y prueba la aplicación.
+Year - Año de publicación
 
-## Publica la aplicación.
-Publica la aplicación en Streamlit Cloud, en Heroku o en el servicio que prefieras https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app
+Genre - Genero del juego
+
+Publisher - Compañía encargada de publicar el juego
+
+NA_Sales - Ventas en Norteamérica (en millones)
+
+EU_Sales - Ventas en Europa (en millones)
+
+JP_Sales - Ventas en Japón (en millones)
+
+Other_Sales - Ventas en el resto del mundo (en millones)
+
+Global_Sales - Ventas a nivel mundial.
+
+## Instrucciones
+
+1. Clona el repositorio en tu máquina local. Puedes hacer esto descargando el repositorio como un archivo ZIP o usando Git en la línea de comandos:
+
+        git clone https://github.com/DWES-LE/streamlit-2---cuadro-de-mandos-personal-Aidan-Miranda.git <destino>
+        
+2. Navega al directorio raíz del proyecto:
+
+        cd <destino>
+        
+3. Crea un entorno virtual para el proyecto:
+
+        python -m venv env
+        
+4. Activa el entorno virtual:
+
+        source env/bin/activate    (En Windows es: env\Scripts\activate)
+        
+5. Instala Streamlit:
+
+        pip install streamlit
+        
+6. Instala los requisitos:
+
+        pip install -r requirements.txt
+        
+7. Ejecuta el archivo "titanic.py" usando Streamlit:
+
+        streamlit run titanic.py
+
+Y listo, abre tu navegador web y ve a la dirección que se te proporciona en la terminal. Por lo general, será http://localhost:8501. ¡Y eso es todo! Deberías ver la aplicación web en funcionamiento. Si deseas detener la aplicación, simplemente presiona Ctrl + C en la línea de comandos donde se está ejecutando Streamlit.
