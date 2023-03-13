@@ -53,8 +53,8 @@ Global_Sales - Ventas a nivel mundial.
 
         pip install -r requirements.txt
         
-7. Ejecuta el archivo "titanic.py" usando Streamlit:
+7. Ejecuta el archivo "app.py" usando Streamlit:
 
-        streamlit run titanic.py
+        streamlit run app.py
 
 Y listo, abre tu navegador web y ve a la dirección que se te proporciona en la terminal. Por lo general, será http://localhost:8501. ¡Y eso es todo! Deberías ver la aplicación web en funcionamiento. Si deseas detener la aplicación, simplemente presiona Ctrl + C en la línea de comandos donde se está ejecutando Streamlit.
